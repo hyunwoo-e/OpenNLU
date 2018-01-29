@@ -33,7 +33,7 @@ OpenBot & OpenNLU provides what you need to build retrieval-based korean chatbot
 - python manage.py runserver 0.0.0.0:8000 (ALL)
 
 ## Projects based on OpenBot & OpenNLU
-### [KONKUK BOT](https://www.youtube.com/watch?v=se6ngTUQdxk)
+### - [KONKUK BOT](https://www.youtube.com/watch?v=se6ngTUQdxk)
 
 ## Samples
 ### Sample Request
@@ -67,9 +67,6 @@ OpenBot & OpenNLU provides what you need to build retrieval-based korean chatbot
     "text": "건대입구 위치 알려줘"
 }
 ```
-
-
-
 
 ### Sample Request
 ```json
