@@ -29,3 +29,6 @@ OpenNLU is able to process korean natural language using pre-built or custom-tra
 ### execute requirements
 - python manage.py runserver <ip>:<port>
 - python manage.py runserver 0.0.0.0:8000 (ALL)
+
+## Projects using OpenBot & OpenNLU
+### [KONKUK BOT](https://www.youtube.com/watch?v=se6ngTUQdxk)
