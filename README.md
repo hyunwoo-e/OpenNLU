@@ -2,11 +2,11 @@
 
 Web-based API Server like 'IBM Watson Conversation API', 'Microsoft Language Understanding Intelligence Service'
 
-OpenBot & OpenNLU provides what you need to build retrieval-based korean chatbot.
+OpenBot & OpenNLU provides what you need to build retrieval-based korean chatbot. 
 
-OpenBot is able to configure dialog to response message.
+[OpenNLU](https://github.com/hyunwoo9301/OpenNLU) is able to process korean natural language using pre-built or custom-trained language models.
 
-OpenNLU is able to process korean natural language using pre-built or custom-trained language models.
+[OpenBot](https://github.com/hyunwoo9301/OpenBot) is able to configure dialog to response message, manage conversation information of user and handle exceptions.
 
 ## Overview
 ![default](https://user-images.githubusercontent.com/20318775/35503799-85a729aa-0524-11e8-8807-1cf3a6f11d63.png)
