@@ -34,3 +34,71 @@ OpenBot & OpenNLU provides what you need to build retrieval-based korean chatbot
 
 ## Projects based on OpenBot & OpenNLU
 ### [KONKUK BOT](https://www.youtube.com/watch?v=se6ngTUQdxk)
+
+## Samples
+### Sample Request
+```json
+{
+	"text":"건대입구 위치 알려줘"
+}
+```
+
+### Sample Response
+```json
+{
+    "intents": [
+        {
+            "intent": "#Location",
+            "score": 0.8604595835264408
+        }
+    ],
+    "entities": [
+        {
+            "values": [
+                {
+                    "end": 4,
+                    "start": 0,
+                    "value": "건대입구"
+                }
+            ],
+            "entity": "@장소"
+        }
+    ],
+    "text": "건대입구 위치 알려줘"
+}
+```
+
+
+
+
+### Sample Request
+```json
+{
+	"text":"내일 시간표 알려줘"
+}
+```
+
+### Sample Response
+```json
+{
+    "entities": [
+        {
+            "entity": "Date",
+            "values": [
+                {
+                    "end": 2,
+                    "value": "2017-11-10",
+                    "start": 0
+                }
+            ]
+        }
+    ],
+    "intents": [
+        {
+            "score": 0.9976826419186618,
+            "intent": "#Schedule"
+        }
+    ],
+    "text": "내일 시간표 알려줘"
+}
+```
