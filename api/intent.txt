@@ -1,0 +1,12 @@
+﻿intent	sentence
+#Welcome	안녕하세요
+#Welcome	안녕
+#Welcome	반갑습니다
+#Welcome	반가워요
+#Profile	프로필 알려줘
+#Profile	프로필 가르쳐줘
+#Profile	프로필 말해줘
+#Location	장소 말해줘
+#Location	장소 가르쳐줘
+#Schedule	시간표 말해줘
+#Schedule	시간표 가르쳐줘
