@@ -5,6 +5,7 @@ from api.entity import *
 from api.intent import *
 from api.synonym import *
 import jpype
+import math
 
 def message(data):
     jpype.attachThreadToJVM()
@@ -14,16 +15,24 @@ def message(data):
 
     entities = []
     labeled_text = transform_entity(text, entities)
+    stemmed_text = stemming(labeled_text)
+    vectorized_text = [0 for i in range(word_count)]
 
-    intents = []
-    vectorized_text = vect.transform([stemming(labeled_text)]).toarray()
+    for word in stemmed_text.split(' '):
+        if wordMap.get(word) != None:
+           vectorized_text[wordMap[word]] = math.pow(tfidfVectorizer[wordMap[word]], 5)
 
+    print(vectorized_text)
+    intent_identifier = sess.run(prediction, feed_dict={X: [vectorized_text]})[0]
+
+    print(sess.run(model, feed_dict={X: [vectorized_text]}))
+    intent_confidence = np.max(sess.run(model, feed_dict={X: [vectorized_text]}))
 
     response = {}
     response["text"] = text
     response["intents"] = [{
-        "intent" : mlp.predict(vectorized_text)[0],
-        "score" : max(mlp.predict_proba(vectorized_text)[0])
+        "intent" : intentDictionary[intent_identifier],
+        "score" : intent_confidence
     }]
     response["entities"] = entities
 

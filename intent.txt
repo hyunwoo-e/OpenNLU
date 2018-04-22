@@ -10,3 +10,7 @@
 #Location	장소 가르쳐줘
 #Schedule	시간표 말해줘
 #Schedule	시간표 가르쳐줘
+#Bus	버스 시간표 말해줘
+#Bus	버스 언제와
+#Subway	지하철 시간표 말해줘
+#Subway	지하철 언제와
